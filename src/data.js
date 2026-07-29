@@ -191,7 +191,7 @@ export const experience = [
       "Working across the stack on scalable, production-ready systems.",
       "Deepening expertise in distributed architecture and clean code practices.",
     ],
-    tech: ["Java", "Spring Boot", "Enterprise Apps"],
+    tech: ["Spring Boot", "Enterprise Apps", ".NET"],
   },
   {
     role: "Java Developer",
@@ -209,19 +209,11 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Expense Tracker",
-    emoji: "💸",
+    title: "Flash-Sale Simulation",
+    emoji: "🛒",
     description:
-      "A full-stack expense management platform with real-time tracking, category analytics and a sleek dashboard. Spring Boot REST API powering a reactive React frontend.",
-    tech: ["React", "Tailwind CSS", "Spring Boot", "MySQL"],
-    accent: "cyan",
-  },
-  {
-    title: "Brain Tumor Detection",
-    emoji: "🧠",
-    description:
-      "Deep learning system that analyses MRI scans using a Convolutional Neural Network to detect and classify brain tumors — bringing AI into medical diagnostics.",
-    tech: ["Python", "CNN", "Deep Learning", "Medical AI"],
+      "A full-stack e-commerce flash-sale simulation engineered for heavy traffic bursts. An Nginx reverse-proxy load balancer distributes traffic across clustered Spring Boot nodes, while Apache ShardingSphere horizontally partitions high-volume order tables across multiple MySQL shards using hash-based routing.",
+    tech: ["React", "Spring Boot", "Nginx", "ShardingSphere", "MySQL"],
     accent: "violet",
   },
   {
@@ -229,9 +221,17 @@ export const projects = [
     emoji: "🏃",
     description:
       "Fitness tracking application built on RESTful services — activity logging, progress metrics and goal tracking wrapped in a clean, responsive interface.",
-    tech: ["Java", "REST APIs", "Fitness Tech"],
+    tech: ["C#", ".NET", "REST APIs", "Fitness Tech", "React"],
     accent: "magenta",
   },
+  {
+    title: "Expense Tracker",
+    emoji: "💸",
+    description:
+      "A full-stack expense management platform with real-time tracking, category analytics and a sleek dashboard. Spring Boot REST API powering a reactive React frontend.",
+    tech: ["Java", "JavaScript", "React", "Tailwind CSS", "Spring Boot", "MySQL"],
+    accent: "cyan",
+  }
 ];
 
 export const education = [

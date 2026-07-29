@@ -191,7 +191,7 @@ export const experience = [
       "Working across the stack on scalable, production-ready systems.",
       "Deepening expertise in distributed architecture and clean code practices.",
     ],
-    tech: ["Java", "Spring Boot", "Enterprise Apps"],
+    tech: ["Spring Boot", "Enterprise Apps", ".NET"],
   },
   {
     role: "Java Developer",
@@ -217,11 +217,11 @@ export const projects = [
     accent: "cyan",
   },
   {
-    title: "Brain Tumor Detection",
-    emoji: "🧠",
+    title: "E-Commerce Flash-Sale Simulation",
+    emoji: "🛒",
     description:
-      "Deep learning system that analyses MRI scans using a Convolutional Neural Network to detect and classify brain tumors — bringing AI into medical diagnostics.",
-    tech: ["Python", "CNN", "Deep Learning", "Medical AI"],
+      "A full-stack e-commerce flash-sale simulation engineered for heavy traffic bursts. An Nginx reverse-proxy load balancer distributes traffic across clustered Spring Boot nodes, while Apache ShardingSphere horizontally partitions high-volume order tables across multiple MySQL shards using hash-based routing.",
+    tech: ["React", "Spring Boot", "Nginx", "ShardingSphere", "MySQL"],
     accent: "violet",
   },
   {

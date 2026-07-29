@@ -212,6 +212,17 @@ export const projects = [
     title: "Flash-Sale Simulation",
     emoji: "🛒",
     description:
+<<<<<<< HEAD
+=======
+      "A full-stack expense management platform with real-time tracking, category analytics and a sleek dashboard. Spring Boot REST API powering a reactive React frontend.",
+    tech: ["React", "Tailwind CSS", "Spring Boot", "MySQL"],
+    accent: "cyan",
+  },
+  {
+    title: "E-Commerce Flash-Sale Simulation",
+    emoji: "🛒",
+    description:
+>>>>>>> 26fbcb5dfe29d37fafb53b9b9aa936c4270e6eba
       "A full-stack e-commerce flash-sale simulation engineered for heavy traffic bursts. An Nginx reverse-proxy load balancer distributes traffic across clustered Spring Boot nodes, while Apache ShardingSphere horizontally partitions high-volume order tables across multiple MySQL shards using hash-based routing.",
     tech: ["React", "Spring Boot", "Nginx", "ShardingSphere", "MySQL"],
     accent: "violet",

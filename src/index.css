@@ -1154,6 +1154,13 @@ button { font: inherit; cursor: pointer; }
 .pc-title { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; }
 .pc-desc { color: var(--text-dim); font-size: 0.93rem; flex: 1; }
 .pc-tech { display: flex; flex-wrap: wrap; gap: 8px; }
+.pc-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 4px;
+}
 .pc-link {
   display: inline-flex;
   align-items: center;
@@ -1161,7 +1168,6 @@ button { font: inherit; cursor: pointer; }
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--cyan);
-  margin-top: 4px;
   transition: gap 0.3s var(--ease);
 }
 .pc-link:hover { gap: 14px; }

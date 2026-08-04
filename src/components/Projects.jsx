@@ -1,6 +1,6 @@
 import { projects, profile } from "../data";
 import { useReveal, useTilt } from "../hooks";
-import { GithubIcon } from "./Icons";
+import { GithubIcon, ExternalLinkIcon } from "./Icons";
 
 function ProjectCard({ project }) {
   const tilt = useTilt();
@@ -20,14 +20,26 @@ function ProjectCard({ project }) {
           <span className="chip" key={t}>{t}</span>
         ))}
       </div>
-      <a
-        className="pc-link"
-        href={profile.socials.github}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <GithubIcon /> View on GitHub
-      </a>
+      <div className="pc-links">
+        {project.liveUrl && (
+          <a
+            className="pc-link"
+            href={project.liveUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <ExternalLinkIcon /> Live Demo
+          </a>
+        )}
+        <a
+          className="pc-link"
+          href={profile.socials.github}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <GithubIcon /> View on GitHub
+        </a>
+      </div>
     </article>
   );
 }

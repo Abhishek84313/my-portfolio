@@ -214,6 +214,7 @@ export const projects = [
     description:
       "A full-stack e-commerce flash-sale simulation engineered for heavy traffic bursts. An Nginx reverse-proxy load balancer distributes traffic across clustered Spring Boot nodes, while Apache ShardingSphere horizontally partitions high-volume order tables across multiple MySQL shards using hash-based routing.",
     tech: ["React", "Spring Boot", "Nginx", "ShardingSphere", "MySQL"],
+    liveUrl: "https://flash-shop-fawn.vercel.app/",
     accent: "violet",
   },
   {
@@ -222,6 +223,7 @@ export const projects = [
     description:
       "Fitness tracking application built on RESTful services — activity logging, progress metrics and goal tracking wrapped in a clean, responsive interface.",
     tech: ["C#", ".NET", "REST APIs", "Fitness Tech", "React"],
+    liveUrl: "https://fit-bit-livid.vercel.app/",
     accent: "magenta",
   },
   {
@@ -230,6 +232,7 @@ export const projects = [
     description:
       "A full-stack expense management platform with real-time tracking, category analytics and a sleek dashboard. Spring Boot REST API powering a reactive React frontend.",
     tech: ["Java", "JavaScript", "React", "Tailwind CSS", "Spring Boot", "MySQL"],
+    liveUrl: "https://expensetracker-jet-pi.vercel.app/dashboard",
     accent: "cyan",
   }
 ];

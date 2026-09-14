@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
   ["About", "#about"],
@@ -54,13 +55,16 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <button
-          className={`burger ${open ? "open" : ""}`}
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          <span /><span /><span />
-        </button>
+        <div className="nav-right">
+          <ThemeToggle />
+          <button
+            className={`burger ${open ? "open" : ""}`}
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
+            <span /><span /><span />
+          </button>
+        </div>
       </nav>
     </header>
   );

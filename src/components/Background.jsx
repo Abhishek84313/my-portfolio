@@ -37,6 +37,16 @@ export default function Background() {
 
     const LINK = 130;
 
+    // particles must darken on the light theme or they wash out entirely
+    let light = document.documentElement.dataset.theme === "light";
+    const themeObserver = new MutationObserver(() => {
+      light = document.documentElement.dataset.theme === "light";
+    });
+    themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+
     const frame = () => {
       ctx.clearRect(0, 0, w, h);
 
@@ -60,7 +70,9 @@ export default function Background() {
 
         ctx.beginPath();
         ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(${d.hue}, 100%, 70%, 0.65)`;
+        ctx.fillStyle = light
+          ? `hsla(${d.hue}, 65%, 42%, 0.42)`
+          : `hsla(${d.hue}, 100%, 70%, 0.65)`;
         ctx.fill();
       }
 
@@ -70,11 +82,13 @@ export default function Background() {
           const dx = a.x - b.x, dy = a.y - b.y;
           const dist = Math.hypot(dx, dy);
           if (dist < LINK) {
-            const alpha = (1 - dist / LINK) * 0.14;
+            const alpha = (1 - dist / LINK) * (light ? 0.16 : 0.14);
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
-            ctx.strokeStyle = `hsla(210, 100%, 75%, ${alpha})`;
+            ctx.strokeStyle = light
+              ? `hsla(222, 60%, 45%, ${alpha})`
+              : `hsla(210, 100%, 75%, ${alpha})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }
@@ -100,6 +114,7 @@ export default function Background() {
 
     return () => {
       cancelAnimationFrame(raf);
+      themeObserver.disconnect();
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", onMove);
       window.removeEventListener("mouseout", onLeave);

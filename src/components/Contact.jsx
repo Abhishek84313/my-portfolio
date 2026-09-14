@@ -54,7 +54,7 @@ export default function Contact() {
   return (
     <section className="section" id="contact">
       <div className="section-inner reveal" ref={ref}>
-        <p className="section-kicker">09 · ping me</p>
+        <p className="section-kicker">10 · ping me</p>
         <h2 className="section-title">
           Let's Build Something <span className="gradient-text">Together</span>
         </h2>

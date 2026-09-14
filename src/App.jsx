@@ -14,12 +14,14 @@ import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Education from "./components/Education";
 import Profiles from "./components/Profiles";
+import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ThemeProvider from "./ThemeProvider";
 
 export default function App() {
   return (
-    <>
+    <ThemeProvider>
       <Splash />
       <Background />
       <Cursor />
@@ -36,10 +38,11 @@ export default function App() {
         <Certifications />
         <Education />
         <Profiles />
+        <FAQ />
         <Contact />
       </main>
       <BackToTop />
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }

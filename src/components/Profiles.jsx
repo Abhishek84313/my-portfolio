@@ -1,5 +1,6 @@
 import { onlineProfiles } from "../data";
 import { useReveal } from "../hooks";
+import { useTheme } from "../theme";
 import { GithubIcon, LinkedinIcon, CodeIcon, TrophyIcon, NotesIcon } from "./Icons";
 
 const ICONS = {
@@ -12,6 +13,7 @@ const ICONS = {
 
 export default function Profiles() {
   const ref = useReveal();
+  const { theme } = useTheme();
   return (
     <section className="section" id="profiles">
       <div className="section-inner reveal" ref={ref}>
@@ -32,7 +34,7 @@ export default function Profiles() {
                 href={p.url}
                 target="_blank"
                 rel="noreferrer"
-                style={{ "--accent": p.accent }}
+                style={{ "--accent": theme === "light" ? p.accentLight : p.accent }}
               >
                 <span className="profile-icon"><Icon /></span>
                 <div className="profile-meta">

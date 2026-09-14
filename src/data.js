@@ -35,6 +35,7 @@ export const onlineProfiles = [
     url: "https://github.com/Abhishek84313",
     icon: "github",
     accent: "#c9d1d9",
+    accentLight: "#24292f",
   },
   {
     name: "LinkedIn",
@@ -43,6 +44,7 @@ export const onlineProfiles = [
     url: "https://www.linkedin.com/in/abhishek-gajavilli-65797b1a9/",
     icon: "linkedin",
     accent: "#0a66c2",
+    accentLight: "#0a66c2",
   },
   {
     name: "LeetCode",
@@ -51,6 +53,7 @@ export const onlineProfiles = [
     url: "https://leetcode.com/abhiabhishek9347/",
     icon: "code",
     accent: "#ffb800",
+    accentLight: "#b57500",
   },
   {
     name: "HackerRank",
@@ -59,6 +62,7 @@ export const onlineProfiles = [
     url: "https://www.hackerrank.com/profile/abhi9347",
     icon: "trophy",
     accent: "#2cbb5d",
+    accentLight: "#0f8a41",
   },
   {
     name: "Notion",
@@ -67,6 +71,7 @@ export const onlineProfiles = [
     url: "https://www.notion.so/Data-Structures-df26af49127e40bcb785fad490262698?pvs=4",
     icon: "notes",
     accent: "#a855f7",
+    accentLight: "#7c3aed",
   },
 ];
 
@@ -191,7 +196,7 @@ export const experience = [
       "Working across the stack on scalable, production-ready systems.",
       "Deepening expertise in distributed architecture and clean code practices.",
     ],
-    tech: ["Spring Boot", "Enterprise Apps", ".NET"],
+    tech: ["Enterprise Applications", "Backend Development", "Full-Stack Development", "System Design", "Agile & SDLC"],
   },
   {
     role: "Java Developer",
@@ -255,5 +260,50 @@ export const education = [
     school: "Narayana College",
     period: "2017 — 2019",
     icon: "📐",
+  },
+];
+
+/* --------------------------------------------------------------
+   Shown just before the contact form — the things people usually
+   email to ask. Keep these current; they are the first thing a
+   recruiter reads before deciding to write.
+   -------------------------------------------------------------- */
+export const quickFacts = [
+  { label: "Status", value: "Open to new roles", accent: "lime", live: true },
+  { label: "Based in", value: "Bengaluru · IST (UTC+5:30)", accent: "cyan", icon: "📍" },
+  { label: "Focus", value: "Backend & full-stack", accent: "violet", icon: "🧭" },
+  { label: "Replies in", value: "Under 24 hours", accent: "magenta", icon: "⚡" },
+];
+
+export const faqs = [
+  {
+    q: "What kind of roles are you looking for?",
+    a: "Backend-leaning Software Engineer roles built on Spring Boot and .NET — that is where I do my strongest work, designing microservices and REST APIs in Java and C#. I'm equally happy on a full-stack team where I own the React layer alongside the services behind it.",
+    tags: ["Spring Boot", ".NET", "Java", "C#", "Full-Stack"],
+  },
+  {
+    q: "Where are you based, and do you work remotely?",
+    a: "Bengaluru, India, on IST (UTC+5:30). On-site or hybrid works here, and I'm set up for fully remote with teams that have a few hours of overlap with my day.",
+    tags: ["Bengaluru", "Hybrid", "Remote"],
+  },
+  {
+    q: "What does your day-to-day stack look like?",
+    a: "Spring Boot and .NET for services — Java and C# respectively — with MySQL for data and React and JavaScript on the frontend. Beyond that I reach for Nginx, ShardingSphere or plain C when the problem asks for it.",
+    tags: ["Spring Boot", ".NET", "MySQL", "React"],
+  },
+  {
+    q: "How soon could you start?",
+    a: "I'm currently building enterprise applications at Talentpace. I'm open to a conversation right away — start dates and notice period are best worked out together once we know the role is a fit.",
+    tags: ["Talentpace", "Notice period"],
+  },
+  {
+    q: "Can I see your code and your resume?",
+    a: "Yes to both. My resume is one click away below, every project on this page links to something live, and the source sits on GitHub. My LeetCode and DSA notes are linked above if you want to see how I think through problems.",
+    tags: ["Resume", "GitHub", "LeetCode"],
+  },
+  {
+    q: "Do you take on freelance or contract work?",
+    a: "Selectively — small, well-scoped backend or full-stack builds where I can do the work justice outside of my full-time commitments. Tell me what you have in mind and I'll be straight with you about whether I can take it on.",
+    tags: ["Freelance", "Contract"],
   },
 ];
